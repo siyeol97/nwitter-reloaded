@@ -9,12 +9,16 @@ import reset from "styled-reset"
 import { useEffect, useState } from "react"
 import LoadingScreen from "./components/Loading-screen"
 import { auth } from "./firebase"
+import ProtectedRoute from "./components/protected-route"
 
 // 라우터
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: // Layout component가 Home, Profile을 감싸고 있기 때문에 Layout을 보호하면 Home, Profile도 보호한다.
+      <ProtectedRoute>
+        <Layout />
+      </ProtectedRoute>,
     children: [
       {
         path: "",

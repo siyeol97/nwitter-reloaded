@@ -1,7 +1,23 @@
-export default function Home(){
+import styled from "styled-components";
+import PostTweetForm from "../components/post-tweet-form";
+import Timeline from "../components/Timeline";
+
+const Wrapper = styled.div`
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    gap: 50px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+`;
+
+export default function Home() {
+
     return (
-        <>
-            <h1>This is Home component</h1>
-        </>
+        <Wrapper>
+            <PostTweetForm />
+            <Timeline />
+        </Wrapper>
     )
 }
