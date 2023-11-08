@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
-[배포 완료 링크](https://nwitter-reloaded-8fa47.web.app/)
+[구경하러 가기](https://nwitter-reloaded-8fa47.web.app/)
