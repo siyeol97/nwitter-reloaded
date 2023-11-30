@@ -7,12 +7,12 @@ import { getStorage } from "firebase/storage";
 // VITE + React + TS : import.meta.env 를 사용해 .env 환경 변수를 불러온다. VITE_ 라는 접두사를 붙여 나타낸다.
 
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_APP_API_KEY,
-    authDomain: import.meta.env.VITE_APP_AUTH_DOMAIN,
-    projectId: import.meta.env.VITE_APP_PROJECT_ID,
-    storageBucket: import.meta.env.VITE_APP_STORAGE_BUCKET,
-    messagingSenderId: import.meta.env.VITE_APP_MESSAGING_SENDER_ID,
-    appId: import.meta.env.VITE_APP_APP_ID,
+    apiKey: "AIzaSyAgOxxGBonIKN5Umjks6V2-ctYxvgW9Vbo",
+    authDomain: "clone-twitter-f6ad3.firebaseapp.com",
+    projectId: "clone-twitter-f6ad3",
+    storageBucket: "clone-twitter-f6ad3.appspot.com",
+    messagingSenderId: "397160863202",
+    appId: "1:397160863202:web:16bbe80e59e78c64f355bb",
 };
 
 // Initialize Firebase
